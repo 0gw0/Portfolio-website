@@ -4,6 +4,8 @@ import React from 'react';
 import Image from 'next/image';
 import profileImg from '@/public/profile.jpg';
 import { motion } from 'framer-motion';
+import { BsLinkedin } from 'react-icons/bs';
+import { FaGithubSquare } from 'react-icons/fa';
 
 export default function Intro() {
 	return (
@@ -40,7 +42,11 @@ export default function Intro() {
 				</div>
 			</div>
 
-			<p className="mb-10 mt-2 px-4 text-2xl font-medium !leading-[1.5] sm:mt-36 sm:text-white sm:absolute sm:inset-0 md:text-3xl md:inset-8 lg:text-4xl lg:inset-24">
+			<motion.h1
+				className="mb-10 mt-2 px-8 text-2xl font-medium !leading-[1.5] sm:mt-36 sm:text-white sm:absolute sm:inset-0 md:text-3xl md:inset-8 lg:text-4xl lg:inset-24"
+				initial={{ opacity: 0, y: 100 }}
+				animate={{ opacity: 1, y: 0 }}
+			>
 				<span className="font-bold">Hi, I&apos;m Glen</span>, a{' '}
 				<span className="underline">Penultimate</span> student from{' '}
 				<span className="underline">
@@ -49,7 +55,25 @@ export default function Intro() {
 				studying <span className="font-bold">Information Systems</span>{' '}
 				with a dual track in <span className="font-bold">Fintech</span>{' '}
 				and <span className="font-bold">Digital Cloud Solutions</span>.
-			</p>
+				<div className="flex justify-center gap-4 mt-4">
+					<a
+						className="bg-white p-4 text-gray-700 flex items-center justify-center gap-2 text-[1.35rem] rounded-full hover:scale-[1.15] hover:text-gray-950 transition cursor-pointer borderBlack"
+						href="https://www.linkedin.com/in/glen-wangsanegara/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<BsLinkedin />
+					</a>
+					<a
+						className="bg-white p-4 text-gray-700 flex items-center justify-center gap-2 text-[1.35rem] rounded-full hover:scale-[1.15] hover:text-gray-950 transition cursor-pointer borderBlack"
+						href="https://github.com/0gw0"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FaGithubSquare />
+					</a>
+				</div>
+			</motion.h1>
 		</section>
 	);
 }
