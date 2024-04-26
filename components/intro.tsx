@@ -9,19 +9,17 @@ import { FaGithubSquare } from 'react-icons/fa';
 
 export default function Intro() {
 	return (
-		<section className="text-center">
+		<section className="text-center mb-12 sm:mb-28">
 			<div className="flex items-center justify-center">
 				{/* Laptop view */}
-				<div className="sm:h-screen relative overflow-hidden">
-					<div className="w-full hidden sm:block">
-						<video
-							src={require('/public/placeholder.mp4')}
-							autoPlay
-							muted
-							loop
-							className="object-cover object-center w-full h-full"
-						/>
-					</div>
+				<div className="w-full hidden sm:block">
+					<video
+						src={require('/public/placeholder.mp4')}
+						autoPlay
+						muted
+						loop
+						className="object-cover object-center w-full "
+					/>
 				</div>
 
 				{/* Mobile view */}
