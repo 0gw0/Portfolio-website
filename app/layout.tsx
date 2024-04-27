@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
 	title: 'Glen | Personal Portfolio',
 	description:
-		'Glen Wangsanegara, a Information System penultimate year student with a dual-track focus in fintech and cloud solutions. Explore his projects, key skills, and insights into financial technology and cloud computing.',
+		'Glen Wangsanegara, a Information System penultimate year student with a dual-track focus in Fintech and Cloud solutions. Explore his projects, key skills, and insights into financial technology and cloud computing.',
 };
 
 export default function RootLayout({
