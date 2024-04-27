@@ -1,15 +1,25 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import profileImg from '@/public/profile.jpg';
 import { motion } from 'framer-motion';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
+import { useInView } from 'react-intersection-observer';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
+	const { ref, inView } = useInView();
+	const { setActiveSection } = useActiveSectionContext();
+
+	useEffect(() => {
+		if (inView) {
+			setActiveSection('Home');
+		}
+	}, [inView, setActiveSection]);
 	return (
-		<section id="home" className="text-center mb-12 sm:mb-28">
+		<section ref={ref} id="home" className="text-center mb-12 sm:mb-28">
 			<div className="flex items-center justify-center">
 				{/* Laptop view */}
 				<div className="w-full hidden sm:block">
