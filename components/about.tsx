@@ -7,7 +7,9 @@ import { useInView } from 'react-intersection-observer';
 import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function About() {
-	const { ref, inView } = useInView();
+	const { ref, inView } = useInView({
+		threshold: 0.8,
+	});
 	const { setActiveSection } = useActiveSectionContext();
 
 	useEffect(() => {
@@ -19,7 +21,7 @@ export default function About() {
 	return (
 		<motion.section
 			ref={ref}
-			className="mb-16 max-w-[50rem] text-center leading-8 sm:mb-0 scroll-mt-28 px-4"
+			className="mb-24 max-w-[50rem] text-center leading-8 sm:mb-0 scroll-mt-28 px-4"
 			initial={{ opacity: 0, y: 100 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.175 }}
