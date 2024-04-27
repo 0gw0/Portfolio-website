@@ -7,7 +7,7 @@ import SectionHeading from './section-heading';
 export default function About() {
 	return (
 		<motion.section
-			className="mb-16 max-w-[50rem] text-center leading-8 sm:mb-20 scroll-mt-28 px-4"
+			className="mb-16 max-w-[50rem] text-center leading-8 sm:mb-0 scroll-mt-28 px-4"
 			initial={{ opacity: 0, y: 100 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.175 }}

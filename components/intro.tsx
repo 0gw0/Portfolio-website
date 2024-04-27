@@ -9,7 +9,7 @@ import { FaGithubSquare } from 'react-icons/fa';
 
 export default function Intro() {
 	return (
-		<section className="text-center mb-12 sm:mb-28">
+		<section id="home" className="text-center mb-12 sm:mb-28">
 			<div className="flex items-center justify-center">
 				{/* Laptop view */}
 				<div className="w-full hidden sm:block">
