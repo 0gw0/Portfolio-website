@@ -44,3 +44,23 @@ export const projectsData = [
 		imageUrl: viiickyImg,
 	},
 ] as const;
+
+export const skillsData = [
+	'Python',
+	'Pandas',
+	'Flask',
+	'HTML',
+	'CSS',
+	'JavaScript',
+	'TypeScript',
+	'React',
+	'React Native',
+	'Next.js',
+	'Vue',
+	'Git',
+	'Tailwind',
+	'PHP',
+	'MongoDB',
+	'SQL',
+	'Framer Motion',
+] as const;
