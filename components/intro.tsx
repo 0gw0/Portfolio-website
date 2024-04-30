@@ -6,6 +6,7 @@ import profileImg from '@/public/profile.jpg';
 import { motion } from 'framer-motion';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 import { useSectionInView } from '@/lib/hooks';
 
 export default function Intro() {
@@ -58,7 +59,7 @@ export default function Intro() {
 				and <span className="font-bold">Digital Cloud Solutions</span>.
 				<div className="flex justify-center gap-4 mt-4">
 					<a
-						className="bg-white p-4 text-gray-700 flex items-center justify-center gap-2 text-[1.35rem] rounded-full hover:scale-[1.15] hover:text-gray-950 transition cursor-pointer borderBlack"
+						className="bg-white p-4 text-gray-700 flex items-center justify-center gap-2 text-[1.35rem] rounded-full hover:scale-110 active:scale-105 hover:text-gray-950 transition cursor-pointer borderBlack"
 						href="https://www.linkedin.com/in/glen-wangsanegara/"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -66,12 +67,18 @@ export default function Intro() {
 						<BsLinkedin />
 					</a>
 					<a
-						className="bg-white p-4 text-gray-700 flex items-center justify-center gap-2 text-[1.35rem] rounded-full hover:scale-[1.15] hover:text-gray-950 transition cursor-pointer borderBlack"
+						className="bg-white p-4 text-gray-700 flex items-center justify-center gap-2 text-[1.35rem] rounded-full hover:scale-110 active:scale-105 hover:text-gray-950 transition cursor-pointer borderBlack"
 						href="https://github.com/0gw0"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
 						<FaGithubSquare />
+					</a>
+					<a
+						className="bg-white p-4 text-gray-700 flex items-center justify-center gap-2 text-[1.35rem] rounded-full hover:scale-110 active:scale-105 hover:text-gray-950 transition cursor-pointer borderBlack"
+						href="mailto:glenw.2022@smu.edu.sg"
+					>
+						<MdEmail />
 					</a>
 				</div>
 			</motion.h1>

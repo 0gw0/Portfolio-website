@@ -4,7 +4,7 @@ import React from 'react';
 import SectionHeading from './section-heading';
 import { skillsData } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
-import { animate, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const fadeInAnimationVariants = {
 	initial: {
@@ -27,13 +27,13 @@ export default function Skills() {
 		<section
 			ref={ref}
 			id="skills"
-			className="mb-28 max-w-[53rem] scroll-m-28 text-center sm:mb-40"
+			className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
 		>
 			<SectionHeading>My skills</SectionHeading>
 			<ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
 				{skillsData.map((skill, index) => (
 					<motion.li
-						className="bg-white border border-black/[0.1] rounded-xl px-5 py-3"
+						className="bg-white border borderBlack rounded-xl px-5 py-3"
 						key={index}
 						variants={fadeInAnimationVariants}
 						initial="initial"
