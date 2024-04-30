@@ -29,7 +29,8 @@ export default function Contact() {
 		>
 			<SectionHeading>Contact Me</SectionHeading>
 			<p className="text-gray-700 -mt-6">
-				Please contact me through the form below
+				Drop me a message and I&apos;ll get back to you as soon as
+				possible.
 			</p>
 			<form className="mt-10 flex flex-col">
 				<input
