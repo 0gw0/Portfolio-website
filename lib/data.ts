@@ -64,7 +64,7 @@ export const projectsData = [
 		title: 'Reventé',
 		description:
 			'An E-commerce website dedicated to promoting sustainability by simplifying the process of selling pre-loved clothing.',
-		tags: ['Vue', 'Firebase firestore', 'HTML', 'CSS', 'Javascript'],
+		tags: ['Vue', 'Firebase', 'HTML', 'CSS', 'Javascript'],
 		imageUrl: reventeImg,
 	},
 	{

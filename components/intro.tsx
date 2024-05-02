@@ -44,7 +44,7 @@ export default function Intro() {
 			</div>
 
 			<motion.h1
-				className="mb-10 mt-2 px-8 text-2xl font-medium !leading-[1.5] sm:mt-36 sm:text-white sm:absolute sm:inset-0 md:text-3xl md:inset-8 lg:text-4xl lg:inset-24"
+				className="mb-10 mt-2 px-8 text-2xl font-medium !leading-[1.5] sm:mt-36 sm:text-white dark:sm:text-white/80 sm:absolute sm:inset-0 md:text-3xl md:inset-8 lg:text-4xl lg:inset-24"
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0 }}
 			>
@@ -58,7 +58,7 @@ export default function Intro() {
 				and <span className="font-bold">Digital Cloud Solutions</span>.
 				<div className="flex justify-center gap-4 mt-4">
 					<a
-						className="bg-white p-4 text-gray-700 flex items-center justify-center gap-2 text-[1.35rem] rounded-full hover:scale-110 active:scale-105 hover:text-gray-950 transition cursor-pointer borderBlack"
+						className="bg-white p-4 text-gray-700 flex items-center justify-center gap-2 text-[1.35rem] rounded-full hover:scale-110 active:scale-105 hover:text-gray-950 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:sm:text-gray-700 dark:sm:bg-white/80"
 						href="https://www.linkedin.com/in/glen-wangsanegara/"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -66,7 +66,7 @@ export default function Intro() {
 						<BsLinkedin />
 					</a>
 					<a
-						className="bg-white p-4 text-gray-700 flex items-center justify-center gap-2 text-[1.35rem] rounded-full hover:scale-110 active:scale-105 hover:text-gray-950 transition cursor-pointer borderBlack"
+						className="bg-white p-4 text-gray-700 flex items-center justify-center gap-2 text-[1.35rem] rounded-full hover:scale-110 active:scale-105 hover:text-gray-950 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:sm:text-gray-700 dark:sm:bg-white/80"
 						href="https://github.com/0gw0"
 						target="_blank"
 						rel="noopener noreferrer"

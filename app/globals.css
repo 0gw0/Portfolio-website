@@ -6,6 +6,14 @@ html {
 	--line-color: #e5e7eb;
 }
 
+html.dark {
+	--line-color: rgba(255, 255, 255, 0.2);
+}
+
 .borderBlack {
 	@apply border border-black/10;
+}
+
+.whiteBg {
+	@apply border-white border border-opacity-40 bg-white bg-opacity-80 backdrop-blur-sm shadow-lg shadow-black/[0.03];
 }
