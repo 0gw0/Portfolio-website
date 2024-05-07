@@ -35,7 +35,7 @@ export default function Intro() {
 						>
 							<Image
 								src={profileImg}
-								alt="Glen"
+								alt="Glen's profile"
 								className="h-24 w-24 object-cover rounded-full border-4 border-white shadow-xl"
 							></Image>
 						</motion.div>
