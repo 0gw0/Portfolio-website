@@ -4,6 +4,8 @@ import React, { useRef } from 'react';
 import Image from 'next/image';
 import { projectsData } from '@/lib/data';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { IoArrowRedo } from 'react-icons/io5';
+import Link from 'next/link';
 
 type ProjectProps = (typeof projectsData)[number];
 export default function Project({
@@ -11,6 +13,7 @@ export default function Project({
 	description,
 	tags,
 	imageUrl,
+	link,
 }: ProjectProps) {
 	const ref = useRef<HTMLDivElement>(null);
 	const { scrollYProgress } = useScroll({
@@ -35,6 +38,14 @@ export default function Project({
 					<p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
 						{description}
 					</p>
+					<Link
+						href={link}
+						target="_blank"
+						className="underline text-sm tracking-wider text-white rounded-full mt-6 sm:mt-auto"
+					>
+						Visit Site
+						<IoArrowRedo className="inline pb-[0.2rem]" />
+					</Link>
 					<ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
 						{tags.map((tag, index) => (
 							<li

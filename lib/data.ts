@@ -66,6 +66,7 @@ export const projectsData = [
 			'An E-commerce website dedicated to promoting sustainability by simplifying the process of selling pre-loved clothing.',
 		tags: ['Vue', 'Firebase', 'HTML', 'CSS', 'Javascript'],
 		imageUrl: reventeImg,
+		link: 'https://smu-wad2.web.app/about',
 	},
 	{
 		title: 'Viiicky',
@@ -73,6 +74,7 @@ export const projectsData = [
 			'Recipient of the Most Creative Award in the 2023 Ellipsis Tech Series Hackathon',
 		tags: ['React', 'TypeScript', 'Tailwind'],
 		imageUrl: viiickyImg,
+		link: 'https://vicky-nine.vercel.app',
 	},
 ] as const;
 
