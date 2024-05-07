@@ -34,12 +34,12 @@ export const links = [
 
 export const experiencesData = [
 	{
-		title: 'Self start',
-		institution: 'edX - Harvard University & Udemy',
+		title: 'Software Engineer Intern',
+		institution: 'Activate Interactive, Singapore',
 		description:
-			'During my national service, I successfully completed the renowned CS50x course. I then delved into frontend fundamentals and successfully finished The Complete Web Development Bootcamp by Dr Angela Yu.',
-		icon: React.createElement(PiCursorClick),
-		date: '2021-2022',
+			'During my internship, I refined my React Native skills while deeply engaging in enhancing and debugging our client-facing mobile application. I played a critical role in integrating new features and gained valuable insights into wearable technology.',
+		icon: React.createElement(FaReact),
+		date: '2023',
 	},
 	{
 		title: 'Bachelor of Science (Information Systems)',
@@ -50,12 +50,12 @@ export const experiencesData = [
 		date: '2022 - present',
 	},
 	{
-		title: 'Software Engineer Intern',
-		institution: 'Activate Interactive, Singapore',
+		title: 'Self start',
+		institution: 'edX - Harvard University & Udemy',
 		description:
-			'During my internship, I refined my React Native skills while deeply engaging in enhancing and debugging our client-facing mobile application. I played a critical role in integrating new features and gained valuable insights into wearable technology.',
-		icon: React.createElement(FaReact),
-		date: '2023',
+			'During my national service, I successfully completed the renowned CS50x course. I then delved into frontend fundamentals and successfully finished The Complete Web Development Bootcamp by Dr Angela Yu.',
+		icon: React.createElement(PiCursorClick),
+		date: '2021-2022',
 	},
 ] as const;
 
