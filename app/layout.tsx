@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Header from '@/components/header';
+import ConditionalHeader from '@/components/conditionalHeader';
 import ActiveSectionContextProvider from '@/context/active-section-context';
 import { Toaster } from 'react-hot-toast';
 import Footer from '@/components/footer';
@@ -28,7 +28,7 @@ export default function RootLayout({
 			>
 				<ThemeContextProvider>
 					<ActiveSectionContextProvider>
-						<Header />
+						<ConditionalHeader />
 						{children}
 						<Footer />
 						<Toaster position="bottom-right" />

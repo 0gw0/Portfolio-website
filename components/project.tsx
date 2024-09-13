@@ -41,7 +41,7 @@ export default function Project({
 					<Link
 						href={link}
 						target="_blank"
-						className="underline text-sm tracking-wider text-white rounded-full mt-6 sm:mt-auto"
+						className="text-sm tracking-wider text-gray-600 dark:text-white hover:underline rounded-full mt-6 sm:mt-auto"
 					>
 						Visit Site
 						<IoArrowRedo className="inline pb-[0.2rem]" />

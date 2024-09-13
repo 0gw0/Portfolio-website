@@ -4,6 +4,7 @@ import { LuGraduationCap } from 'react-icons/lu';
 import { PiCursorClick } from 'react-icons/pi';
 import reventeImg from '@/public/revente.png';
 import viiickyImg from '@/public/viiicky.png';
+import yataImg from '@/public/yata.png'
 
 export const links = [
 	{
@@ -67,6 +68,14 @@ export const projectsData = [
 		tags: ['Vue', 'Firebase', 'HTML', 'CSS', 'Javascript'],
 		imageUrl: reventeImg,
 		link: 'https://smu-wad2.web.app/about',
+	},
+	{
+		title: 'YATA',
+		description:
+			'An enterprise solution built using Service-Oriented Architecture (SOA) and scalable microservices - Empowering Healthcare in Singapore.',
+		tags: ['Python', 'Flask', 'KrakenD', 'RabbitMQ', 'ExpressJS'],
+		imageUrl: yataImg,
+		link: 'https://www.canva.com/design/DAGAkk7bgUY/WfDpD9C12thxVQY5h292kg/view?utm_content=DAGAkk7bgUY&utm_campaign=designshare&utm_medium=link&utm_source=editor',
 	},
 	{
 		title: 'Viiicky',
