@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { projectsData } from '@/lib/data';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { IoArrowRedo } from 'react-icons/io5';
+import { FiGithub } from 'react-icons/fi';
 import Link from 'next/link';
 
 type ProjectProps = (typeof projectsData)[number];
@@ -14,6 +15,8 @@ export default function Project({
 	tags,
 	imageUrl,
 	link,
+	github,
+	information,
 }: ProjectProps) {
 	const ref = useRef<HTMLDivElement>(null);
 	const { scrollYProgress } = useScroll({
@@ -38,14 +41,35 @@ export default function Project({
 					<p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
 						{description}
 					</p>
-					<Link
-						href={link}
-						target="_blank"
-						className="text-sm tracking-wider text-gray-600 dark:text-white hover:underline rounded-full mt-6 sm:mt-auto"
-					>
-						Visit Site
-						<IoArrowRedo className="inline pb-[0.2rem]" />
-					</Link>
+					<div className="flex gap-4 mt-4">
+						{link && (
+							<Link
+								href={link}
+								target="_blank"
+								className="text-sm text-gray-600 dark:text-white hover:underline"
+							>
+								Visit Site <IoArrowRedo className="inline" />
+							</Link>
+						)}
+						{github && (
+							<Link
+								href={github}
+								target="_blank"
+								className="text-sm text-gray-600 dark:text-white hover:underline"
+							>
+								GitHub <FiGithub className='inline' />
+							</Link>
+						)}
+						{information && (
+							<Link
+								href={information}
+								target="_blank"
+								className="text-sm text-gray-600 dark:text-white hover:underline"
+							>
+								More Info
+							</Link>
+						)}
+					</div>
 					<ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
 						{tags.map((tag, index) => (
 							<li
