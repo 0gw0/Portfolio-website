@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "@react-email/components": "^0.0.17",
     "@react-email/tailwind": "^0.0.16",
