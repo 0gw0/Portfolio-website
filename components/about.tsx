@@ -23,11 +23,9 @@ export default function About() {
 				passion for programming and enrolled in courses such as the
 				renowned{' '}
 				<span className="font-medium">CS50x by Harvard University</span>{' '}
-				and a{' '}
-				<span className="font-medium">
-					web development bootcamp by Dr. Angela Yu
-				</span>
-				. In my free time, I <span className="underline">love</span>{' '}
+				and{' '}
+				<span className="font-medium">web development bootcamps</span>.
+				In my free time, I <span className="underline">love</span>{' '}
 				<span className="italic">
 					catching up on the latest AI news and learning about new
 					technologies
@@ -37,10 +35,10 @@ export default function About() {
 			<p>
 				I am currently studying in Singapore Management University
 				pursuing a degree in{' '}
-				<span className="font-medium">Information Systems</span> where I
-				am <span className="italic">eager</span> to learn more about
-				real-world applications of{' '}
-				<span className="underline">Fintech and Cloud solutions</span>.
+				<span className="font-medium">Information Systems</span> with a
+				focus on{' '}
+				<span className="underline">Financial Technologies</span> and{' '}
+				<span className="underline">Cloud solutions</span>.
 			</p>
 		</motion.section>
 	);

@@ -2,6 +2,7 @@ import React from 'react';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
 import { LiaEthereum } from 'react-icons/lia';
+import { RiBankLine } from 'react-icons/ri';
 import reventeImg from '@/public/revente.png';
 import viiickyImg from '@/public/viiicky.png';
 import yataImg from '@/public/yata.png';
@@ -37,6 +38,14 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+	{
+		title: 'Software Engineer Intern',
+		institution: 'GIC, Singapore',
+		description:
+			'Worked on front office tech to enhance data visibility and modernize existing cloud infrastructure. Developed and deployed serverless workflows using .NET, Terraform, and AWS services like Lambda, RDS, and S3. Collaborated with engineering and cloud teams to improve backend systems, and support data operations used in trading workflows.',
+		icon: React.createElement(RiBankLine),
+		date: '2025',
+	},
 	{
 		title: 'Software Engineer Intern',
 		institution: 'Formo, Ho Chi Minh City, Vietnam',
@@ -130,6 +139,11 @@ export const projectsData = [
 export const skillsData = [
 	'Python',
 	'Flask',
+	'Java',
+	'C#',
+	'.Net',
+	'AWS',
+	'Docker',
 	'JavaScript',
 	'TypeScript',
 	'React',
@@ -138,9 +152,8 @@ export const skillsData = [
 	'Vue',
 	'Git',
 	'PHP',
-	'MongoDB',
 	'SQL',
-	'Docker',
+	'MongoDB',
 	'Solidity',
 	'Web3.js',
 ] as const;
